@@ -1,0 +1,12 @@
+/* Webfont: PTSans-Bold */@font-face {
+    font-family: 'PTSans';
+    src: url('PTSans-Bold.eot'); /* IE9 Compat Modes */
+    src: url('PTSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('PTSans-Bold.woff') format('woff'), /* Modern Browsers */
+         url('PTSans-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('PTSans-Bold.svg#PTSans-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

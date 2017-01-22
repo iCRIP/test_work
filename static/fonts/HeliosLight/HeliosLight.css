@@ -1,0 +1,12 @@
+/* Webfont: HeliosLight */@font-face {
+    font-family: 'HeliosLight';
+    src: url('HeliosLight.eot'); /* IE9 Compat Modes */
+    src: url('HeliosLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('HeliosLight.woff') format('woff'), /* Modern Browsers */
+         url('HeliosLight.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('HeliosLight.svg#HeliosLight') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

@@ -1,0 +1,12 @@
+/* Webfont: PTSans-Regular */@font-face {
+    font-family: 'PTSans';
+    src: url('PTSans-Regular.eot'); /* IE9 Compat Modes */
+    src: url('PTSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('PTSans-Regular.woff') format('woff'), /* Modern Browsers */
+         url('PTSans-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('PTSans-Regular.svg#PTSans-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

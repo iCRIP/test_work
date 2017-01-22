@@ -1,0 +1,12 @@
+/* Webfont: HeliosThin */@font-face {
+    font-family: 'HeliosThin';
+    src: url('HeliosThin.eot'); /* IE9 Compat Modes */
+    src: url('HeliosThin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('HeliosThin.woff') format('woff'), /* Modern Browsers */
+         url('HeliosThin.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('HeliosThin.svg#HeliosThin') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
