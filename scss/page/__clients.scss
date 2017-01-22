@@ -1,0 +1,42 @@
+.clients{
+	background-color: #e8e8e8;
+	padding: 30px 0 60px;
+	&-title{
+		text-align: center;
+		font-size: $fz24;
+		font-weight: 300;
+		text-transform: uppercase;
+		color:$cl;
+		margin-bottom: 30px;
+	}
+	.carousel{
+		&-item{
+			text-align: center;
+			line-height: 113px;
+			min-height:113px;
+			img{
+				display: inline-block;
+				max-height:113px;
+			}
+		}
+	}
+}
+.corp{
+	&-main{
+		position: relative;
+		z-index:2;
+		background-image: url('../img/corp.jpg');
+		background-size: cover;
+		color:$cw;
+		padding:80px 0;
+		&-title{
+			font-size: 4em;
+			font-weight: 900;
+			text-transform: uppercase;
+			letter-spacing: 1rem;
+			line-height: 1.8;
+			margin-top:0;
+			margin-bottom: 50px;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+.testi{
+	background-color: #6e2bb4;
+	color:$cw;
+	padding: 50px 0;
+	.carousel-arrow{
+		background-color: transparent;
+		border:2px solid $cw;
+		&:after{
+			margin-top: -1px;
+		}
+	}
+	.carousel-item{
+		&-title{
+			font-size: $fz24;
+		}
+		&-time{
+			padding:5px 10px;
+			display: block;
+		}
+		&-text{
+			font-size: $fz18;
+		}
+	}
+}

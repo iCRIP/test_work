@@ -1,0 +1,54 @@
+.gallery{
+	&-title{
+		font-size: $fz24;
+		color:$cw;
+		text-transform: uppercase;
+		margin: 45px 0;
+		text-align: center;
+		font-weight: 300;
+	}
+	.carousel-arrow{
+		background-color: transparent;
+	    border: 2px solid #fff;
+	}
+	.carousel-arrows {
+	    left: 25px;
+	    right: 25px;
+	}
+	.carousel-as-nav{
+		margin-top: 27px;
+		margin-bottom: 35px;
+		.carousel-item{
+			margin:0 10px;
+			cursor:pointer;
+		}
+	}
+	&-pics{
+		background-image: url('../img/gal-bg.jpg');
+		background-color: #974de2;
+	}
+	&-vid{
+		background-image: url('../img/gal-bg2.jpg');
+		padding-bottom: 30px;
+		padding-top: 37px;
+
+		.carousel-as-nav{
+			.carousel-item{
+				position: relative;
+				&:after{
+					content: '';
+					position: absolute;
+					top:50%;
+					margin-top: -20px;
+					left:50%;
+					margin-left: -15px;
+					display: block;
+					border-top: 20px solid transparent;
+					border-bottom: 20px solid transparent;
+					border-right: 0px solid transparent;
+					border-left: 30px solid #fff;
+				}
+			}
+		}
+	}
+}

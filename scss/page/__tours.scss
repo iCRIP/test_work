@@ -1,0 +1,202 @@
+.tours{
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 90px;
+    padding-bottom: 77px;
+    &.no-borders{
+    	margin-bottom:0px;
+   		padding-bottom: 0px;
+   		border:none;
+    }
+    &.yellow{
+    	.tours-item-link{
+    		background:$cy;
+    	}
+    }
+    &.widget{
+        border-top: 1px solid #eee;
+	    padding-top: 50px;
+	    margin-top: 50px;
+	    margin-bottom:0px;
+   		padding-bottom: 0px;
+   		 border-bottom: none;
+    }
+	&-title{
+		font-size: $fzh1;
+		font-weight: bold;
+		display: inline-block;
+		line-height: 1.62em;
+		&-link{
+			line-height: 2.5em;
+		    display: inline-block;
+		    color: #777777;
+		    vertical-align: bottom;
+		    position: relative;
+		    padding-right: 30px;
+		    margin-left:25px;
+		    &:after{
+		    	@extend .top-slider-btn:after;
+		    }
+		}
+	}
+	&-control{
+		text-align: right;
+	}
+	&-arrow{
+		display:inline-block;
+		width: 35px;
+		height: 35px;
+		border:2px solid;
+		color:$cb;
+		text-align: center;
+		    line-height: 31px;
+		border-radius:50%;
+		transition:.2s all;
+		cursor:pointer;
+		font-family: 'FontAwesome';
+		font-size: $fzlg;
+		&:hover{
+			color:$cl;
+			background:$cl;
+			&:before{
+				color:$cw;
+			}
+		}
+		&.left{
+			    text-indent: -3px;
+			&:before{
+				content:"\f104";
+			}
+		}
+		&.right{
+			    text-indent: 3px;
+			&:before{
+				content:"\f105";
+			}
+
+		}
+	}
+	&-grid{
+		margin: 30px -13px 0;
+		width:auto;
+		.tours-item{
+			margin:13px;
+		}
+	}
+	&-item{
+		@extend .box-shadow;
+		max-height:400px;
+		min-height:400px;
+		position: relative;
+		margin-bottom:35px;
+		
+		&:focus{
+			outline:none;
+		}
+		&-sale{
+		    position: absolute;
+		    top:9px;
+		    background:$cb;
+		    left:-5px;
+		    font-size: $fzlg;
+		    line-height: 30px;
+			color:$cl;
+			font-weight: bold;
+			padding:0 17px;
+			&:before{
+				    content: '';
+				    display: block;
+				    position: absolute;
+				    bottom: -5px;
+				    left: 0;
+				    border-top: 5px solid #000;
+				    border-left: 5px solid transparent;
+			}
+		}
+		&-meta{
+			    position: absolute;
+			    /* top: 0; */
+			    bottom: 0;
+			    left: 0;
+			    right: 0;
+			    padding: 15px;
+			    text-align: left;
+		}
+		&-price{
+			color:$cw;
+			font-size: $fzh2;
+			font-weight: bold;
+		}
+		&-left{
+			@extend .tours-item-price;
+			font-size: 1em;
+			&:before{
+			    font-family: 'FontAwesome';
+			    content: "\f017";
+			    display: inline-block;
+			    margin-right: 7px;
+			    font-weight: 100;
+			    line-height: 13px;
+			    font-size: 15px;
+			}
+		}
+		&-title{
+			font-size: $fzlg;
+			font-weight: bold;
+			    padding: 10px 15px 12px;
+			a{
+				color:$cb;
+				&:hover{
+					text-decoration: none;
+					color:$cl;
+				}
+			}
+		}
+		&-text{
+			padding: 0 15px 15px;
+			font-size: $fzsm;
+			line-height: 1.6em;
+		}
+		&-link{
+			color:$cb;
+			background:$cl;
+			position:absolute;
+			bottom:0;
+			display:block;
+			left:0;
+			right:0;
+			line-height: 53px;
+			border-bottom:2px solid #cdba37;
+			text-align: center;
+			text-transform: uppercase;
+			&:hover{
+				color:$cw;
+				text-decoration: none;
+			}
+		}
+	}
+	&-thumb{
+		text-align: center;
+		position: relative;
+		
+		&.overlay{
+			&:after{
+				content:'';
+				display:block;
+				position: absolute;
+				top:0;
+				left: 0;
+				right:0;
+				bottom:0;
+				z-index:2;
+				background:rgba(0, 0, 0, .3)
+			}
+		}
+		img{
+			width:100%;
+		}
+		>*{
+			z-index:3;
+		}
+	}
+
+}

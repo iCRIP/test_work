@@ -1,0 +1,153 @@
+.carousel{
+	position: relative;
+	padding-bottom:  10px;
+	&-item{
+		position: relative;
+		&:focus{
+			outline: none;
+		}
+		a{
+			&:focus{
+				outline:none;
+			}
+		}
+		img{
+			&:focus{
+				outline:none;
+			}
+		}
+		&-caption{
+			position: absolute;
+			top:0;
+			bottom:0;
+			left:0;
+			right:0;
+			padding:0;
+			margin:0;
+			text-align: left;
+		    padding: 0 13.5% 6.1%;
+			display: flex;
+			justify-content:flex-end;
+			flex-direction: column;
+			font-family: 'Helios';
+			color: $cw;
+			h1{
+				font-size: 4em;
+				font-weight: 900;
+				line-height: 1;
+				position: relative;
+				font-size: 76px;
+				font-weight: 300;
+				margin-bottom: 0;
+				display: inline-block;
+				.md{
+					font-size: 48px;
+					font-weight: 100;
+					display: block;
+				}
+				.ic{
+					position: relative;
+					padding-right: 34px;
+					&:after{
+						content: '';
+						display: block;
+						position: absolute;
+						right:0;
+						top: -1px;
+						width: 30px;
+						height: 30px;
+						background-repeat: no-repeat;
+						background-image: url(../img/plane.svg); 
+					}
+				}
+				
+			}
+			small{
+				display: block;
+				font-size: 14px;
+				margin-top: 3px;
+				margin-left: 3px;
+			}
+		}
+	}
+	&-container{
+		width: 1100px;
+		margin: 0 auto;
+	}
+	&-arrows{
+		position: absolute;
+		top:50%;
+	    left: 0;
+	    right: 0;
+	    text-align: right;
+	    color:$cw;
+	    &.side{
+    	        margin-top: -25px;
+	    	.carousel-arrow{
+	    		position: absolute;
+	    		&.left{
+					left: 7%;
+	    		}
+	    		&.right{
+					right:7%;
+	    		}
+	    	}
+	    }
+	}
+	&-arrow{
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		text-align: center;
+		position: relative;
+		cursor:pointer;
+		border-radius: 100%;
+		margin-bottom: 10px;
+		transition: .3s all;
+		font-size: 9px;
+		&.right{
+			&:after{
+				transform:rotate(135deg);
+				right: 0;
+			}
+		}
+		&.left{
+			&:after{
+				transform:rotate(-45deg); 
+				left: 0;
+			}
+		}
+		&:after{
+			content:'';
+			top:0;
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			border-top: 1px solid;
+			border-left: 1px solid;
+		}
+		&:hover{
+			
+		}
+	}
+	&:before{
+		position: absolute;
+		content: '';
+		display: block;
+		bottom: 5px;
+		left: 17px;
+		right: 17px;
+		    background-color: rgba(0, 0, 0, 0.7);
+		height: 5px;
+	}
+	&:after{
+		position: absolute;
+		content: '';
+		display: block;
+		bottom: 0px;
+		left: 38px;
+		right: 38px;
+		    background-color: rgba(0, 0, 0, 0.3);
+		height: 10px;
+	}
+}

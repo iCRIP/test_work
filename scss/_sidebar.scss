@@ -1,0 +1,21 @@
+.sidebar{
+    padding-right: 58px;
+}
+.side-banner{
+	@extend .box-shadow;
+	@extend .top-banner;
+	position: relative;
+	margin:0 0 35px;
+	border-bottom: 4px solid $cl;
+	max-height: none;
+	img{
+
+	}
+	a{
+	    padding: 20px 60px 20px 20px;
+		&:after{
+		    top: 25px;
+			right: 25px;
+		}
+	}
+}

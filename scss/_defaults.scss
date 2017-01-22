@@ -1,0 +1,18 @@
+@mixin un-ul(){
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+*{box-sizing:border-box;}
+body{
+	padding: 0;
+	margin: 0;
+	font-size: $em;
+	font-family: $ff;
+}
+a{
+	color:inherit;
+	transition:.3s all;
+}
+
+

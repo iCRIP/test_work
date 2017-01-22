@@ -1,0 +1,70 @@
+.slide{
+	&-what{
+		position: relative;
+		&.slided{
+			.slide-btn{
+				&:before{
+					transform:rotate(180deg);
+				}
+			}
+		}
+	}
+	&-this{
+		overflow: hidden;
+		transition: .3s height;
+		box-sizing: content-box;
+	}
+	&-btn{
+		position: absolute;
+		right:0;
+		color:$cl;
+		cursor:pointer;
+		font-size: $fz18;
+		top:0;
+		height: 18px;
+		&:before{
+		    content: "\f107";
+			display: inline-block;
+			font-family: 'FontAwesome';
+			transform:rotate(0deg);
+			transition: .3s all;
+		}
+	}
+}
+.tab{
+	&-wrap{
+
+	}
+	&-item{
+		cursor: pointer;
+		&-cont{
+			display: none;
+			&.active{
+				display: block;
+			}
+		}
+	}
+
+}
+/* #TODO custom selects
+<div class="select-option" data-selectSearch="true">
+	<div class="select-option-drop">
+		<li class="select-option-item">
+			<label for="radio5">
+				<input id="radio5" name="radio2" type="radio">XL
+			</label>
+		</li>
+		<li class="select-option-item">
+			<label for="radio6">
+				<input id="radio6" name="radio2" type="radio">XL
+			</label>
+		</li>
+		<li class="select-option-item">
+			<label for="radio7">
+				<input id="radio7" name="radio2" type="radio">XL
+			</label>
+		</li>
+	</div>
+</div> 
+
+*/

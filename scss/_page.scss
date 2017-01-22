@@ -1,0 +1,63 @@
+// @import 'page/__mobile-menu';
+@import 'page/__carousel';
+// @import 'page/__catalog';
+// @import 'page/__banner';
+// @import 'page/__product';
+// @import 'page/__breadcrumbs';
+// @import 'page/__news';
+// @import 'page/__about';
+// @import 'page/__contacts';
+// @import 'page/__map';
+// @import 'page/__btns';
+// @import 'page/__components';
+
+
+.tab{
+	&-wrap{
+		position: relative;
+		&-cont{
+
+		}
+	}
+	&-item{
+		&-cont{
+			transition: 3s display 1s;
+			display: none;
+			&.active{	
+				display: block;
+				position: relative;
+			}
+		}
+	}
+}
+
+.forms-wrapper{
+	display: none;
+}
+.cform{
+
+	padding: 10px;
+	&-group{
+		display: block;
+		position: relative;
+		padding: 15px 0 10px;
+	}
+	&-label{
+		display: block;
+		color: $cy;
+		position: absolute;
+		transition: .3s all;
+	    transform: translate(10px, -23px);
+	}
+	&-input{
+		min-width: 250px;
+		line-height: 2;
+		padding: 0 10px;
+		&:focus{
+			+ label{
+			    transform: translate(0px, -53px);
+			}
+		}
+	}
+
+}

@@ -1,0 +1,29 @@
+.breadcrumbs{
+	font-size: $fzxs;
+	text-transform: uppercase;
+	margin: 20px 0;
+	padding: 5px;
+	border-radius:3px;
+	display: inline-block;
+	vertical-align: bottom;
+	a{
+		color:$cb;
+
+		&:after{
+			content:'/';
+			display: inline-block;
+			margin:0 5px 0 10px;
+			line-height:1;
+			vertical-align: bottom;
+			color:$cb;
+			font-size: $fz24;
+		}
+	}
+	span{
+		color:$cb;
+		font-size: $fz24;
+		font-weight: bold;
+		vertical-align: bottom;
+		line-height: 16px;
+	}
+}

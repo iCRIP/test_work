@@ -1,0 +1,118 @@
+.top{
+	margin-bottom: 30px;
+	&-bar{
+		background:$cd;
+		color: $cb;
+		font-weight: bold;
+	    line-height: 3.5;
+	    font-size: $fzxs;
+		a{
+			color: $cy;
+			&:hover{
+				color: $cl;
+				text-decoration: none;
+			}
+		}
+	}
+	&-menu{
+		ul{
+			@include un-ul();
+			display: flex;
+			justify-content:center;
+			li{
+				transition: .3s all;
+			    padding: 10px 14px 27px;
+			    margin-right: -1px;
+				border-top: 2px solid transparent;
+				border-left: 1px solid transparent;
+				border-right: 1px solid transparent;
+				border-left: 1px solid transparent;
+				cursor:pointer;
+				position: relative;
+				top:1px;
+				font-size: $fzlg;
+				&.active{
+					border-top: 2px solid $cl;
+					border-left: 1px solid $cg;
+					border-right: 1px solid $cg;
+					background-color: #fff;
+					color:$cl;
+				}
+				a{
+					background-color: $cl;
+					text-decoration: none;
+					color:$cw;
+					font-size: $fzxs;
+					
+				}
+				
+			}
+		}
+	}
+	&-navbar{
+		padding-top: 18px;
+		border-bottom: 1px solid $cg;
+		&-flex{
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+	&-logo{
+	    margin-right: auto;
+	    padding-right: 35px;
+
+		img{
+			position: relative;
+			top:2px;
+			left: 2px;
+		}
+	}
+	&-lang{
+		&-link{
+			display: inline-block;
+			margin-right: 29px;
+		}
+		
+	}
+	&-ctrl{
+		text-align: right;
+		&-link{
+			display: inline-block;
+			color: $cy;
+		    margin-left: 34px;
+		}
+		&-clock{
+			color:#ddd;
+			height: 20px;
+			width: 20px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+			background-image: url(../img/1.svg);
+		}
+	}
+	&-search{
+		position: relative;
+	    margin-top: 8px;
+		&-block{
+		    margin-left: auto;
+		}
+		input[type="text"]{
+			width: 250px;
+			border:1px solid $cg;
+			outline: none;
+			line-height: 2;
+		    padding: 2px 9px 0;
+		}
+		button{
+			position: absolute;
+			background-image: url(../img/2.svg);
+			width: 20px;
+			height: 20px;
+			border: none;
+			background-color: transparent;
+			right: 3px;
+			top: 6px;
+		}
+	}
+}

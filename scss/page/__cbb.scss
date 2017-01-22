@@ -1,0 +1,22 @@
+.cbb{
+    background: url(../img/cat-bg.jpg);
+    min-height: 130px;
+    background-size: cover;
+    background-position: center center;
+    padding: 45px 10px;
+	&-cont{
+		text-align: center;
+		font-size: $fzl;
+		color:$cl;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing:3px;
+		.btn{
+			vertical-align: top;
+			margin-left:25px;
+			&:hover{
+				color:$cw;
+			}
+		}
+	}
+}

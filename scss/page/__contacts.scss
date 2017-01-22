@@ -1,0 +1,89 @@
+.contacts{
+	margin-bottom: 40px;
+	&-item{
+		margin-bottom: 30px;
+		&-icon{
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 10px;
+			font-size: $fz24;
+			color:$cl;
+		}
+		&-cont{
+			display: inline-block;
+			line-height: 2;
+			text-align: left;
+		}
+	}
+	&-text{
+		line-height: 2;
+	}
+	&-title{
+		font-weight: 900;
+		color:$cl;
+		text-transform: uppercase;
+		letter-spacing: .6px;
+		margin-bottom: 30px;
+	}
+	&-cont{
+		background-color: $cl;
+		color:$cw;
+		padding: 55px 65px 45px;
+		font-size: $fz18;
+		box-shadow:-2px 0 18px -2px #000;
+		>p{
+			margin-bottom: 15px;
+		}
+	}
+	&-flex{
+		display: flex;
+		margin: 15px 0;
+	}
+	&-name{
+		border-bottom: 1px solid;
+		padding-bottom: 10px;
+	}
+	&-tel{
+		padding-top: 10px;
+	}
+	&-part{
+		padding: 0 10px;
+		display: flex;
+		flex-direction:column;
+		justify-content:flex-end;
+		i{
+			margin-right: 5px;
+		}
+	}
+	&-address{
+		display: flex;
+		padding-left: 10px;
+		align-items:center;
+		margin-bottom: 10px;
+		i{
+			margin-right: 20px;
+		}
+	}
+	a{
+		&:hover{
+			color:$cw;
+		}
+	}
+	&-socs{
+		text-align: center;
+		a{
+			font-size: $fzxs;
+			margin: 0 15px;
+			border-radius:50%;
+			display: inline-block;
+			height: 30px;
+			width: 30px;
+			line-height: 27px;
+			border: 2px solid;
+			&:hover{
+				 background-color: $cw;
+				 color:$cl;
+			}
+		}
+	}
+}
